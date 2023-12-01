@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  react-portfolio-website: 
+    image: react-portfolio
+    build: .
+    container_name: portfolio_c
+    ports: 
+      - '3000:3000'
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./src:/app/src
+    environment:
+      - CHOKIDAR_USEPOLLING=true
