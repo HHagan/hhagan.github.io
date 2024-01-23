@@ -1,14 +1,13 @@
 nav {
     background: rgba(0, 0, 0, 0.3);
-    width: max-content;
-    display: block;
-    pad: 0.7rem 1.7rem;
+    padding: 0.7rem .7rem;
     z-index: 2;
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2rem;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
+    flex-direction: column;
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
@@ -30,4 +29,22 @@ nav a:hover {
 nav a.active {
     background: var(--color-primary);
     color: var(--color-bg);
+}
+
+/* ====== MEDIA QUERIES (SMALL DEVICES) ========= */
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 0.7rem 0.7rem;
+        left: 50%;
+        top: auto;
+        transform: translateX(-50%) rotate(-90deg);
+        flex-direction: column; 
+        bottom: 0;
+        width: max-content; 
+    }
+
+    nav a {
+        padding: 0.9rem;
+        transform: rotate(90deg);
+    }
 }

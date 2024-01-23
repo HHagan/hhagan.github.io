@@ -16,9 +16,7 @@ const AboutCard = ({ icon, title, subtitle }) => (
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
-
+  
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
@@ -28,9 +26,13 @@ const About = () => {
 
         <div className="about__content">
           <div className="about__cards">
+          <a href="#experience">
             <AboutCard icon={<FaAward className="about__icon" />} title="Experience" subtitle="5+ Years Working" />
+          </a>
             <AboutCard icon={<FiUsers className="about__icon" />} title="Clients" subtitle="1" />
+          <a href="#portfolio">  
             <AboutCard icon={<VscFolderLibrary className="about__icon" />} title="Projects" subtitle="15" />
+          </a>
           </div>
           <p>
             Welcome to my digital universe, a place where bits and pixels come together to create a web of wonders! Explore

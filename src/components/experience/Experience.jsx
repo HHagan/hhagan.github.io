@@ -5,8 +5,7 @@ import { LuBadgeCheck } from "react-icons/lu";
 const Experience = () => {
   return (
     <section id='experience'>     
-      <h5>My Experience</h5>
-      <h2>Skills Symphonay</h2>
+      <h2>Skills Symphony</h2>
       <div className="container experience__container">
         <article className="experience">
           <div className="experience__head">

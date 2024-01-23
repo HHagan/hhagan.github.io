@@ -17,8 +17,8 @@ const App = () => {
   };
 
   return (
-    <>
-      {/* Pass theme and toggleTheme to ThemeToggle */}
+    <> 
+      {/* <ThemeToggle theme={theme} toggleTheme={toggleTheme} /> */}
       <Header />
       <Nav />
       <About />
